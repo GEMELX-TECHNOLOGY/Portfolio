@@ -1,0 +1,27 @@
+---
+import Slide from "./Slide.astro"
+import EmailIcon from "./EmailIcon.astro"
+---
+
+<section class="w-screen mx-auto lg:w-[1140px] h-screen py-44 flex flex-col overflow-hidden justify-center" id="Contact">  
+  <div class="flex flex-row  items-center">
+  <div class="flex flex-col justify-center">
+      <h1
+        class="text-5xl font-bold flex justify-center flex-row gap-x-4 pb-4"
+      >
+        Hola 👋, Nosotros Somos GEMLEX TECHNOLOGY
+      </h1>
+      <h2 class="text-xl opacity-80 justify-center">
+        Desarrolladores de Aplicaciones Web y Moviles. De Durango, Mexico
+        🇲🇽. Especializados en crear experiencias 😉.
+      </h2>
+      <nav class="flex flex-wrap gap-4 mt-8">
+        <a href="mailto:contact@gemlex.dev" class="inline-flex items-center justify-center gap-2 px-4 py-1 border border-gray-600 bg-gray-800 rounded-full hover:borer-gray-300 hover:text-black hover:bg-gray-100 roup max-w-fit focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black duration-150">
+          <EmailIcon/>
+          Contactanos
+        </a>
+      </nav>
+    </div>
+      <Slide />
+    </div>
+  </section>
