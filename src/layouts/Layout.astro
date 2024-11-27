@@ -1,7 +1,6 @@
 ---
 import '@fontsource-variable/lexend';
 import Header from "../components/Header.astro"
-import Wave from '../components/Wave.astro';
 interface Props {
 	title: string;
 }
@@ -23,7 +22,6 @@ const { title } = Astro.props;
 	<body>
 		<Header />
 		<slot />
-		<Wave/>
 	</body>
 </html>
 <style is:global>
