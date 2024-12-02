@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import image from '../assets/image.png'
+import image2 from '../assets/image2.png'
+---
+
+<section class="w-screen mx-auto lg:w-[1228px] h-screen flex flex-col overflow-hidden justify-center" id="nosotros">
+    <div class="flex flex-row justify-between items-center mt-10">
+        <div class="flex flex-col max-w-[562px]">
+            <h1 class="text-[50px] bg-gradient-to-r from-[#00f0ff] via-[#5200ff] to-[#ff2df7] inline-block text-transparent bg-clip-text leading-tight">Experiencia Digital a tu Medida.</h1>
+            <h2 class="text-[30px] font-bold gap-y-0 leading-tight">Conectamos tu visión con el mundo digital.</h2>
+            <p class="text-[20px] mt-6 inline">En GEMLEX, <span class="text-blue-500 inline">servicios de desarrollo de apps y sitios web diseñados para tu negocio</span>, con un enfoque en el diseño intuitivo, la accesibilidad y la optimización. Cada proyecto es una oportunidad para llevar tu presencia online al siguiente nivel.</p>
+        </div>  
+        <div class="w-[531px]">
+           <Image src={image} alt=""/>
+        </div>
+        </div>
+    </div>
+    <div class="flex flex-row-reverse justify-between items-center">
+        <div class="flex flex-col max-w-[562px]">
+            <h1 class="text-[50px] bg-gradient-to-r from-[#00f0ff] via-[#5200ff] to-[#ff2df7] inline-block text-transparent bg-clip-text leading-tight">Potencia tu Marca con Tecnología.</h1>
+            <h2 class="text-[30px] font-bold gap-y-0 leading-tight">Desarrollamos aplicaciones y sitios web para el futuro.</h2>
+            <p class="text-[20px] mt-6 inline">Nuestra misión es construir experiencias digitales innovadoras que conecten a las marcas con sus clientes de manera auténtica. Cada proyecto de desarrollo es un paso hacia un futuro más conectado y eficiente.</p>
+        </div>  
+        <div class="w-[531px]">
+           <Image src={image2} alt=""/>
+        </div>
+        </div>
+    </div>
+</section>

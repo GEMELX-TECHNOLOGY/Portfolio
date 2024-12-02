@@ -1,15 +1,31 @@
 ---
-import FormContact from "./FormContact.astro";
+import { Image } from "astro:assets";
+import ContactImage from "../assets/ContactImage.png"
 ---
 
-<section
-  class="w-screen h-screen overflow-hidden relative mx-auto lg:w-[1140px] py-44 flex flex-col"
-  id="contacto"
->
-  <h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">
-    Contacto
-  </h1>
-  <div class="w-full">
-    <FormContact/>
+<div class="flex justify-start mx-auto h-[513px] items-center max-w-[1228px]">
+  <div class="flex bg-gray-900 w-full h-full justify-center items-center">
+    <div class="flex items-center justify-center">
+      <Image src={ContactImage}  alt="" class="w-[500px] h-[500px]"/>
+    </div>
+    <div class="flex items-center justify-center flex-col w-[619px] h-[204px]">
+      <h1 class="text-[45px]">RENUEVA TU NEGOCIO ENTRANDO A LA <span class="bg-gradient-to-r from-[#00f0ff] via-[#5200ff] to-[#ff2df7] inline-block text-transparent bg-clip-text">ERA DIGITAL</span></h1>
+
+      <div class="flex flex-row gap-x-2">
+        <div class="flex items-center p-[1.5px] justify-center border-0 rounded-full  bg-gradient-to-r from-[#00f0ff] via-[#5200ff] to-[#ff2df7] w-[399px] h-[50px] hover:animate-gradient">
+          <input 
+          type="text"
+          placeholder="Ingresa tu correo electronico"
+          class="rounded-full  w-full h-full px-4 py-2 "
+        >
+        </div>
+      <button class="flex items-center p-[1.5px] justify-center border-0 rounded-full  bg-gradient-to-r from-[#00f0ff] via-[#5200ff] to-[#ff2df7] w-[219px] h-[45.95px] hover:animate-gradient">
+        <div class="flex rounded-full bg-black h-full w-full items-center justify-center gap-2">
+          Enviar
+        </div>
+      </button>
+      </div>
+
+    </div>
   </div>
-</section>
+</div>

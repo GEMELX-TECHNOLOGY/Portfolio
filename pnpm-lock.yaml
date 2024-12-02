@@ -17,6 +17,12 @@ importers:
       '@fontsource-variable/lexend':
         specifier: ^5.1.1
         version: 5.1.1
+      '@fontsource-variable/noto-sans-jp':
+        specifier: ^5.1.0
+        version: 5.1.0
+      '@fontsource/poppins':
+        specifier: ^5.1.0
+        version: 5.1.0
       astro:
         specifier: ^4.16.13
         version: 4.16.13(rollup@4.27.3)(typescript@5.6.3)
@@ -334,6 +340,12 @@ packages:
 
   '@fontsource-variable/lexend@5.1.1':
     resolution: {integrity: sha512-ixzYkzPiJRBAxYPsjIUBLBjS1zXBMF75qQwoVyEPWOtt5uyEHdT8jTpbh/b4ibsnQvqEVb/CToifmEXJfvShag==}
+
+  '@fontsource-variable/noto-sans-jp@5.1.0':
+    resolution: {integrity: sha512-VmEW0dlHsC0tQOlZlzcrUj+9HL73pANKneMrsZD8X6Jg3XhysOYY6R2VRGO4cTYwp5iVznt1crzGUEWM+/xQuA==}
+
+  '@fontsource/poppins@5.1.0':
+    resolution: {integrity: sha512-tpLXlnNi2fwQjiipvuj4uNFHCdoLA8izRsKdoexZuEzjx0r/g1aKLf4ta6lFgF7L+/+AFdmaXFlUwwvmDzYH+g==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2457,6 +2469,10 @@ snapshots:
     optional: true
 
   '@fontsource-variable/lexend@5.1.1': {}
+
+  '@fontsource-variable/noto-sans-jp@5.1.0': {}
+
+  '@fontsource/poppins@5.1.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
