@@ -1,10 +1,47 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
+import projectsEs from "@data/es/es_projects.json";
+import projectsEn from "@data/en/en_projects.json";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const projectsTitle = t("projects.title");
+
+const projects = lang === "es" ? projectsEs : projectsEn;
+
+type project = {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+};
+
+const items: project[] = projects.projects;
 ---
 
-<section class="flex flex-col w-screen h-screen overflow-hidden relative mx-auto lg:w-[1140px]  py-44" id="proyectos">  
-  <div class="flex flex-col gap-y-16">
-    <ProjectCard/>
+<section
+  class="max-w-[1113px] w-full h-screen justify-center flex flex-col mx-auto"
+>
+  <div
+    class="absolute blur-[50px] left-20 pointer-events-none select-none rounded-full w-[362px] h-[277px] bg-gradient-to-r to-[#3C4672]/40 via-[#3C4672]/40 from-transparent"
+  >
   </div>
-
+  <h1 class="text-white text-[60px] font-bold" set:html={projectsTitle} />
+  <div class="grid flex-row justify-center mt-[50px] grid-cols-2">
+    {
+      items.map((item) => (
+        <ProjectCard
+          title={item.name}
+          description={item.description}
+          image={item.image}
+        />
+      ))
+    }
+  </div>
+  <div
+    class="absolute blur-[50px] right-20 pointer-events-none select-none rounded-full w-[362px] h-[277px] bg-gradient-to-r to-[#3C4672]/40 via-[#3C4672]/40 from-transparent"
+  >
+  </div>
 </section>

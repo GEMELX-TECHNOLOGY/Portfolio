@@ -1,0 +1,16 @@
+---
+import HeroSection from "@components/HeroSection.astro";
+import AboutSection from "@components/AboutSection.astro";
+import Layout from "@layouts/Layout.astro";
+import ProjectsSection from "@components/ProjectsSection.astro";
+
+export async function getStaticPaths() {
+  return [{ params: { lang: "es" } }, { params: { lang: "en" } }];
+}
+---
+
+<Layout title="GEMLEX">
+  <HeroSection />
+  <ProjectsSection />
+  <AboutSection />
+</Layout>

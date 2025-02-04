@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Sistema integral de administracion y control",
+      "description": "Sistema completo para mejorar la gestion general de lo que ocurre dentro.",
+      "image": "./project1.png"
+    },
+    {
+      "id": 2,
+      "name": "Landing page servicios ALPRO",
+      "description": "Extension de la pagina de alpro mostrando sus diferentes servicios para su compra.",
+      "image": "./project1.png"
+    }
+  ]
+}

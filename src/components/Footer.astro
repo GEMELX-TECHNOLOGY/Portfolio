@@ -1,0 +1,25 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const footerContact = t("footer.contact");
+const footerEs = t("footer.es");
+const footerEn = t("footer.en");
+---
+
+<footer class="relative mt-20 flex w-full place-items-center h-[100px] pt-14">
+  <hr
+    class="absolute top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-white to-transparent bg-center md:my-9"
+  />
+
+  <div class="flex flex-row w-full items-center justify-between px-8">
+    <span class="text-white text-lg">©2025 GEMLEX.</span>
+    <div class="text-white text-lg space-x-4 text-center">
+      <a href="mailto:gontiverosdavila@gmail.com" set:html={footerContact} />
+      <a href="/es" set:html={footerEs} />
+      <a href="/en" set:html={footerEn} />
+    </div>
+  </div>
+</footer>

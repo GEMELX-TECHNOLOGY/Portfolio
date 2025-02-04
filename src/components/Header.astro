@@ -1,25 +1,77 @@
 ---
-import GithubLogo from "./GithubLogo.astro"
-import LOGO from "../assets/logo-GEMLEX.png"
-import { Image } from "astro:assets";
+import GithubIcon from "@ui/icons/GithubIcon.astro";
+import LinkedInIcon from "@ui/icons/LinkedInIcon.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const navHome = t("nav.home");
+const navProjects = t("nav.projects");
+const navAbout = t("nav.about");
+const navContact = t("nav.contact");
 ---
-<header class="py-3 px-10 flex items-center fixed top-2 w-full justify-center z-40">
-  
 
-  <nav class="flex flex-row gap-x-4 opacity-80  w-[660px] justify-start items-center">
-    <a href="/" class="flex">
-      <Image src={LOGO} alt="GEMLEX LOGO" class="w-[100px] h-[25px]"/>
-    </a>
-    <a href="/#equipo">Team</a>
-    <a href="/#proyectos">Projectos</a>
-    <a href="/#nosotros">Nosotros</a>
-    <a href="/#contacto">Contacto</a>
+<style>
+  .header-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: reduce-header linear both;
+    animation-timeline: scroll();
+    animation-range: 0 150px;
+    padding-block: 1.5rem;
+  }
+
+  @keyframes reduce-header %100 {
+    box-sahdow:
+      0 5px 50px -5px #ffffff1a,
+      0 0 0 1px #ffffff1a;
+    background-color: #0000;
+    padding-block: 1rem;
+    backdrop-filter: blur(10px);
+  }
+</style>
+
+<header
+  class="header-animation flex flex-row justify-between px-8 py-6 items-center backdrop-blur-2xl z-[99999] overflow-visible"
+>
+  <img src="./logo.svg" alt="GEMLEX" srcset="" class="w-auto h-auto" />
+  <nav>
+    <ul class="flex flex-row space-x-8">
+      <li>
+        <a
+          href={`/${lang}/#`}
+          class="text-2xl font-medium text-white"
+          set:html={navHome}
+        />
+      </li>
+      <li>
+        <a
+          href={`/${lang}/#`}
+          class="text-2xl font-medium text-white"
+          set:html={navProjects}
+        />
+      </li>
+      <li>
+        <a
+          href={`/${lang}/#`}
+          class="text-2xl font-medium text-white"
+          set:html={navAbout}
+        />
+      </li>
+      <li>
+        <a
+          href={`/${lang}/#`}
+          class="text-2xl font-medium text-white"
+          set:html={navContact}
+        />
+      </li>
+    </ul>
   </nav>
-
-  <div class=" flex w-[550px] justify-end">
-    <a href="https://github.com/GEMELX-TECHNOLOGY">
-      <GithubLogo/>
-    </a>
-
+  <div class="flex flex-row space-x-4 mr-5">
+    <a href="https://github.com/GEMELX-TECHNOLOGY"><GithubIcon /></a>
+    <a href=""><LinkedInIcon /></a>
   </div>
 </header>
