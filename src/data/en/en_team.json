@@ -4,19 +4,19 @@
       "id": 1,
       "name": "Gerardo Ontiveros",
       "role": "Full stack Developer",
-      "image": "./gerardo-ontiveros.png"
+      "image": "/gerardo-ontiveros.png"
     },
     {
       "id": 2,
       "name": "Michelle Ortega",
       "role": "Backend Developer",
-      "image": "./michelle-ortega.png"
+      "image": "/michelle-ortega.png"
     },
     {
       "id": 3,
       "name": "Edwin Solorza",
       "role": "UI/UX Designer",
-      "image": "./edwin-solorza.png"
+      "image": "/edwin-solorza.png"
     },
     {
       "id": 4,
@@ -28,13 +28,13 @@
       "id": 5,
       "name": "Angel Hernandez",
       "role": "UI/UX Designer",
-      "image": "./desconocido.png"
+      "image": "/desconocido.png"
     },
     {
       "id": 6,
       "name": "Lizeth Salinas",
       "role": "Frontend Developer",
-      "image": "./desconocida.png"
+      "image": "/desconocida.png"
     }
   ]
 }

@@ -4,37 +4,37 @@
       "id": 1,
       "name": "Gerardo Ontiveros",
       "role": "Desarollador FullStack",
-      "image": "./gerardo-ontiveros.png"
+      "image": "/gerardo-ontiveros.png"
     },
     {
       "id": 2,
       "name": "Michelle Ortega",
       "role": "Desarrolladora Backend",
-      "image": "./michelle-ortega.png"
+      "image": "/michelle-ortega.png"
     },
     {
       "id": 3,
       "name": "Edwin Solorza",
       "role": "Diseñador UI/UX",
-      "image": "./edwin-solorza.png"
+      "image": "/edwin-solorza.png"
     },
     {
       "id": 4,
       "name": "Jessica Rivera",
       "role": "Desarrolladora Frontend",
-      "image": "./jessica-rivera.png"
+      "image": "/jessica-rivera.png"
     },
     {
       "id": 5,
       "name": "Angel Hernandez",
       "role": "Diseñador UI/UX",
-      "image": "./desconocido.png"
+      "image": "/desconocido.png"
     },
     {
       "id": 6,
       "name": "Lizeth Salinas",
       "role": "Desarrolladora Frontend",
-      "image": "./desconocida.png"
+      "image": "/desconocida.png"
     }
   ]
 }
